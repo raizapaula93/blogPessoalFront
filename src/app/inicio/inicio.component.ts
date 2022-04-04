@@ -18,7 +18,7 @@ export class InicioComponent implements OnInit {
       if(environment.token==''){
           this.route.navigate(['/entrar'])
       }
-
+      
   }
 
 }

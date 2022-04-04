@@ -23,12 +23,14 @@ export class TemaComponent implements OnInit {
     if(environment.token==''){
       this.router.navigate(['/entrar'])
       }
+      this.findAllTemas()
     }
 
     findAllTemas(){
       this.temaService.getAllTema().subscribe((resp: Tema[])=>{
         this.listaTemas = resp
-      } )      
+
+      } )
     }
 
    cadastrar(){
